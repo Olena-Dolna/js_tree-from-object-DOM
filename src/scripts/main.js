@@ -35,7 +35,7 @@ function addBranches(treeElement, dataElements) {
     branch.textContent = key;
     treeElement.append(branch);
 
-    if (subtree.length === 0) {
+    if (Object.entries(subtree).length === 0) {
       continue;
     }
 
